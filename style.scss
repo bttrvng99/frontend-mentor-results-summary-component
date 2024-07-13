@@ -16,25 +16,16 @@ $DarkGrayBlue: hsl(224, 30%, 27%);
   src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+@import url("./modern-normalize.css");
 
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  width: 100%;
-}
 
 * {
   font-family: "Hanken Grotesk";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 p,
@@ -45,7 +36,9 @@ div {
 .total_result {
   color: white;
   background-image: linear-gradient($LightSlateBlue, $LightRoyalBlue);
-  padding: 1rem 2rem 3rem;
+  // padding: 1rem 2rem 3rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   border-radius: 0 0 1rem 1rem;
   text-align: center;
   width: 100%;
@@ -97,74 +90,72 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   gap: 1rem;
 
   h1 {
-    margin: 0;
     align-self: self-start;
   }
-}
 
-.stats {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 1rem;
-
-  &-name {
+  .stats {
     display: flex;
     flex-direction: row;
-    align-content: center;
-
-    img {
-      margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+  
+    &-name {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+  
+      img {
+        margin-right: 10px;
+      }
     }
-  }
-
-  &:first-of-type {
-    background: hsl(0, 100%, 67%, 0.1);
-
-    .stats-name {
-      color: $LightRed;
+  
+    &:first-of-type {
+      background: hsl(0, 100%, 67%, 0.1);
+  
+      .stats-name {
+        color: $LightRed;
+      }
     }
-  }
-
-  &:nth-of-type(2) {
-    background: hsl(39, 100%, 56%, 0.1);
-
-    .stats-name {
-      color: $OrangeyYellow;
+  
+    &:nth-of-type(2) {
+      background: hsl(39, 100%, 56%, 0.1);
+  
+      .stats-name {
+        color: $OrangeyYellow;
+      }
     }
-  }
-
-  &:nth-of-type(3) {
-    background: hsl(166, 100%, 37%, 0.1);
-
-    .stats-name {
-      color: $GreenTeal;
+  
+    &:nth-of-type(3) {
+      background: hsl(166, 100%, 37%, 0.1);
+  
+      .stats-name {
+        color: $GreenTeal;
+      }
     }
-  }
-
-  &:last-of-type {
-    background: hsl(234, 85%, 45%, 0.1);
-
-    .stats-name {
-      color: $CobaltBlue;
+  
+    &:last-of-type {
+      background: hsl(234, 85%, 45%, 0.1);
+  
+      .stats-name {
+        color: $CobaltBlue;
+      }
     }
-  }
-
-  &-name {
-    // color: $LightRed;
+  
+    &-name {
+      // color: $LightRed;
+    }
   }
 }
 
 button {
   background-color: $DarkGrayBlue;
-  width: 100%;
+  // width: 100%;
   border: 0;
   color: $White;
   border-radius: 5rem;
