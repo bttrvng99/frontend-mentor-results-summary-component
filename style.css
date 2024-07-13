@@ -127,11 +127,12 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 @media screen and (min-width: 768px) {
-  html, body {
+  html,
+  body {
     display: flex;
     flex-direction: column;
     align-self: center;

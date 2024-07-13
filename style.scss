@@ -158,12 +158,13 @@ button {
   cursor: pointer;
 
   &:hover {
-    background-color: linear-gradient($VioletBlue, $PersianBlue);
+    background-image: linear-gradient($LightSlateBlue, $LightRoyalBlue);
   }
 }
 
 @media screen and (min-width: 768px) {
-  html, body {
+  html,
+  body {
     display: flex;
     flex-direction: column;
     align-self: center;
