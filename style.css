@@ -115,14 +115,39 @@ div {
 .details .stats:last-of-type .stats-name {
   color: hsl(234, 85%, 45%);
 }
+
 button {
   background-color: hsl(224, 30%, 27%);
+  width: 100%;
   border: 0;
   color: hsl(0, 0%, 100%);
   border-radius: 5rem;
   padding: 1rem;
   font-weight: 700;
   cursor: pointer;
+}
+button:hover {
+  background-color: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+
+@media screen and (min-width: 768px) {
+  html, body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    height: 100%;
+  }
+  main {
+    flex-direction: row;
+  }
+  .total_result {
+    flex-basis: 50%;
+    border-radius: 1rem;
+  }
+  .details {
+    flex-basis: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
